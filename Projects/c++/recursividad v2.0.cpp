@@ -5,7 +5,7 @@ void ordenar(int array[], int n, int i = 0) {
     if (i > n) return;
     int minimo = i;
     for (int j = i + 1; j < n; j++) {
-        if (array[j] > array[minimo]) {
+        if (array[j] < array[minimo]) {
             minimo = j;}}
     if (minimo != i) {
         int temp = array[i];
