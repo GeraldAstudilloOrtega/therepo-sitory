@@ -116,7 +116,9 @@ public class login extends javax.swing.JFrame {
         }
         else{
             try{
-                PreparedStatement ps=cn.prepareStatement("SELECT nivel FROM usuarios WHERE cedula='"+usuario+"' AND contraseña='"+contraseña+"'");
+                PreparedStatement ps=cn.prepareStatement("SELECT nivel FROM usuarios WHERE cedula=? AND contraseña=?");
+                ps.setString(1, usuario);
+                ps.setString(2, contraseña);
                 ResultSet rs=ps.executeQuery();
                 if(rs.next()){
                     String nivel=rs.getString("nivel");

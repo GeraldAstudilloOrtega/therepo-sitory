@@ -1,0 +1,26 @@
+# Compiled binaries
+*.exe
+*.o
+*.obj
+*.class
+
+# IDE files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+.DS_Store
+
+# Build directories
+target/
+build/
+dist/
+out/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
